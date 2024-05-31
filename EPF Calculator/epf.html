@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EPF Calculator</title>
+    <link rel="stylesheet" href="./epf.css">
+</head>
+<body>
+    <div class="container">
+        <h1>EPF Calculator</h1>
+        <form id="epfForm">
+            <label for="monthlySalary">Monthly Salary (&#8377;):</label>
+            <input type="number" id="monthlySalary" name="monthlySalary" required>
+            
+            <label for="epfPercentage">EPF Contribution (%):</label>
+            <input type="number" id="epfPercentage" name="epfPercentage" required>
+            
+            <button type="button" onclick="calculateEPF()">Calculate EPF</button>
+        </form>
+        <div class="calculations">
+            <h2>EPF AMOUNT </h2>
+            
+            <p>AnnualEPF (&#8377;) :<span id="annualEPF"></span></p>
+        
+    <script src="./epf.js"></script>
+</body>
+</html>
